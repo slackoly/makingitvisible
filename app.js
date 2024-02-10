@@ -74,6 +74,8 @@ function keyPressed(){
 function keyReleased() {
   if (keyCode === 81) {
     stom1 = closedstom
+
+    
   }
   if (keyCode === 65) {
     stom2 = closedstom
@@ -100,3 +102,4 @@ function keyReleased() {
     stom9 = closedstom
   }
 }
+
