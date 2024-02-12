@@ -33,7 +33,15 @@ function preload() {
   closedstom = loadImage('./img/stomata_closed.png');
   openstom = loadImage('./img/stomata_opened.png');
 
-  note1 = loadSound('./mp3/a-4.mp3');
+  note1 = loadSound('./mp3/d4.mp3');
+  note2 = loadSound('./mp3/e4.mp3');
+  note3 = loadSound('./mp3/f4.mp3');
+  note4 = loadSound('./mp3/f-4.mp3');
+  note5 = loadSound('./mp3/g4.mp3');
+  note6 = loadSound('./mp3/a5.mp3');
+  note7 = loadSound('./mp3/a-5.mp3');
+  note8 = loadSound('./mp3/c5.mp3');
+  note9 = loadSound('./mp3/d5.mp3');
 }
 
 function setup() {
@@ -59,36 +67,42 @@ function keyPressed(){
     note1.play();
   }
   if (keyCode === 65) {
-    stom2 = openstom
+    stom2 = openstom;
+    note4.play();
   }
   if (keyCode === 90) {
-    stom3 = openstom
+    stom3 = openstom;
+    note7.play();
   }
   if (keyCode === 87) {
-    stom4 = openstom
+    stom4 = openstom;
+    note2.play();
   }
   if (keyCode === 83) {
-    stom5 = openstom
+    stom5 = openstom;
+    note5.play();
   }
   if (keyCode === 88) {
-    stom6 = openstom
+    stom6 = openstom;
+    note8.play();
   }
   if (keyCode === 69) {
-    stom7 = openstom
+    stom7 = openstom;
+    note3.play();
   }
   if (keyCode === 68) {
-    stom8 = openstom
+    stom8 = openstom;
+    note6.play();
   }
   if (keyCode === 67) {
     stom9 = openstom
+    note9.play();
   }
 }
 
 function keyReleased() {
   if (keyCode === 81) {
     stom1 = closedstom
-
-
   }
   if (keyCode === 65) {
     stom2 = closedstom
