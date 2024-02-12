@@ -10,6 +10,16 @@ let stom9;
 let closedstom;
 let openstom;
 
+var note1;
+var note2;
+var note3;
+var note4;
+var note5;
+var note6;
+var note7;
+var note8;
+var note9;
+
 function preload() {
   stom1 = loadImage('./img/stomata_closed.png');
   stom2 = loadImage('./img/stomata_closed.png');
@@ -22,6 +32,8 @@ function preload() {
   stom9 = loadImage('./img/stomata_closed.png');
   closedstom = loadImage('./img/stomata_closed.png');
   openstom = loadImage('./img/stomata_opened.png');
+
+  note1 = loadSound('./mp3/a-4.mp3');
 }
 
 function setup() {
@@ -43,7 +55,8 @@ function draw() {
 
 function keyPressed(){
   if (keyCode === 81) {
-    stom1 = openstom
+    stom1 = openstom;
+    note1.play();
   }
   if (keyCode === 65) {
     stom2 = openstom
@@ -75,7 +88,7 @@ function keyReleased() {
   if (keyCode === 81) {
     stom1 = closedstom
 
-    
+
   }
   if (keyCode === 65) {
     stom2 = closedstom
@@ -102,4 +115,3 @@ function keyReleased() {
     stom9 = closedstom
   }
 }
-
